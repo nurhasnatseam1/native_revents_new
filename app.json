@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "revents",
+    "slug": "react_native_revents",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "revents.expo.googlesignin",
+      "config": {
+        "googleSignIn": {
+
+          "reservedClientId": "com.googleusercontent.apps.682667176462-t8ng7a2089vqn38svtipkau8jduaoq2b"
+        }
+      }
+    },
+    "android": {
+        "package": "revents.expo.googlesignin",
+        "googleServicesFile": "./google-services.json"
+    }
+  }
+}
+ 
