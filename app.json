@@ -27,7 +27,6 @@
       "bundleIdentifier": "revents.expo.googlesignin",
       "config": {
         "googleSignIn": {
-
           "reservedClientId": "com.googleusercontent.apps.682667176462-t8ng7a2089vqn38svtipkau8jduaoq2b"
         }
       }
