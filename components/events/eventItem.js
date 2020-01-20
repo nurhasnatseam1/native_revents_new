@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,StyleSheet,TouchableHightlight} from  'react-native';
+import {Text,View,StyleSheet,TouchableHighlight} from  'react-native';
 import { format } from 'date-fns';
 
 
@@ -24,7 +24,7 @@ const EventListItem=props=>{
                   <Text>venue:{props.item.venue}</Text>
                   </View>
             </View>
-      <TouchableHightlight  style={styles.itemBottom} >{<Text style={{textAlign:'center'}} >{+props.item.date.seconds?format(props.item.date.seconds*1000,'MM/dd/yyyy'):'no date'}</Text>}</TouchableHightlight>
+            <TouchableHighlight onPress={()=>props.navigate('EventDetailedPage',{id:props.item.id})} style={styles.itemBottom} >{<Text style={{textAlign:'center'}} >{+props.item.date.seconds?format(props.item.date.seconds*1000,'MM/dd/yyyy'):'no date'}</Text>}</TouchableHighlight>
       </View>
 )}
 
