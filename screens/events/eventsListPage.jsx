@@ -6,7 +6,7 @@ import EventListItem from '../../components/events/eventItem';
 
 
 const mapStateToProps=state=>(
-      {events:state.firestore.ordered.events}
+      {events:state.firestore.ordered.eventsList}
 )
 
 const mapActions={
@@ -35,4 +35,4 @@ const styles=StyleSheet.create({
       }
 })
 
-export default connect(mapStateToProps,mapActions)(firestoreConnect(()=>[{collection:'events'}])(EventListPage))
+export default connect(mapStateToProps,mapActions)(firestoreConnect(()=>[{collection:'events',storeAs:'eventsList'}])(EventListPage))

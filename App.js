@@ -6,6 +6,7 @@ import reduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/storage';
 import 'firebase/firestore'; // <- needed if using firestore
 // import 'firebase/functions' // <- needed if using httpsCallable
 import { createStore, combineReducers, compose,applyMiddleware } from 'redux'
